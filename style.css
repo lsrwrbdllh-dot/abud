@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #0d1117; /* لون مظلم احتياطي */
+    color: #f0f6fc;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* التنسيق الأساسي للواجهة والخلفية الخاصة بك */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    /* الخلفية المثبتة مع التظليل */
+    background-image: linear-gradient(rgba(13, 17, 23, 0.7), rgba(13, 17, 23, 0.85)), url('./pg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #58a6ff;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #58a6ff;
+    margin-bottom: 15px;
+}
+
+.interest-tag, .subtitle {
+    font-size: 1.3rem;
+    color: #c9d1d9;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.expert-tag, .subtitle2 {
+    font-size: 1.1rem;
+    color: #8b949e;
+    margin-bottom: 30px;
+}
+
+/* الكروت والمعرض */
+.card {
+    background: rgba(22, 27, 34, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* أزرار التواصل الاجتماعي الملونة */
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.fb { background-color: #1877f2; }
+.insta { background-color: #e4405f; }
+.wa { background-color: #25d366; }
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* تنسيق الصور المتحركة والتصميم المرن */
+.flex-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .flex-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+.item-text { flex: 1; }
+
+/* جعل الصور المتحركة دائرية ولها إطار جميل */
+.circular-gif img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+}
+
+.card h2 {
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #8b949e;
+}
